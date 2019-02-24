@@ -1,0 +1,12 @@
+
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          #多个文件,分隔
+          searchLocations: "classpath:/common-config"
+server:
+  port: 8080

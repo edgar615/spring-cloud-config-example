@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          #默认
+          uri: "https://github.com/edgar615/spring-cloud-consul-config-data/"
+          repos:
+            #application.name=simple
+            simple: https://github.com/simple/config-repo
+            #
+            special:
+              pattern: special*/dev*,*special*/dev*
+              uri: https://github.com/special/config-repo
+              #application.name以local开头
+            local:
+              pattern: local*
+              uri: file:/home/configsvc/config-repo

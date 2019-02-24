@@ -5,7 +5,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-//Once you have successfully refreshed the config client service, the new value should be reflected in the service response.
+//Once the /actuator/refresh event is triggered for the service, all the beans that are annotated with @RefreshScope will be refreshed
 @RefreshScope
 @RestController
 public class MessageRestController {
