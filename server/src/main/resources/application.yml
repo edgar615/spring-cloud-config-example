@@ -1,0 +1,6 @@
+server:
+  port: 8080
+
+spring:
+  applicaiton:
+    name: config-server
