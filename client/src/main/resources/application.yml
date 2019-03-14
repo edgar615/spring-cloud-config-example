@@ -5,4 +5,8 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: refresh
+
+#spring:
+#  profiles:
+#    active: development

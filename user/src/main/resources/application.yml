@@ -1,0 +1,19 @@
+management:
+  info:
+    defaults:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
+
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 192.168.1.212:9092
+          minPartitionCount: 1
+          autoCreateTopics: true
+          autoAddPartitions: true

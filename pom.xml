@@ -13,6 +13,9 @@
     <module>client</module>
     <module>multi-repo</module>
     <module>file-server</module>
+    <module>bus-refresh</module>
+    <module>user</module>
+    <module>webhook</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>

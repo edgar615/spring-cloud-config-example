@@ -4,7 +4,7 @@ spring:
   cloud:
     config:
 #      label: master
-#      profile: dev
+#      profile: development
       uri: "http://localhost:8080/"
 server:
   port: 9000

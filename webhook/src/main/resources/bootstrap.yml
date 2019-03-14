@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/edgar615/spring-cloud-consul-config-data/"
+          search-paths: /
+          #Skipping SSL Certificate Validation
+#          skipSslValidation: true
+          #Setting HTTP Connection Timeout
+#          timeout: 4
+#        native:
+#          searchLocations: "classpath:/common-config"
