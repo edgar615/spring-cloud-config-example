@@ -4,7 +4,7 @@ spring:
       server:
         git:
           uri: "https://github.com/edgar615/spring-cloud-consul-config-data/"
-          search-paths: /
+          search-paths: /, /service-config, /service-config/user, /service-config/order
           #Skipping SSL Certificate Validation
 #          skipSslValidation: true
           #Setting HTTP Connection Timeout

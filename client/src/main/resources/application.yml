@@ -7,6 +7,12 @@ management:
       exposure:
         include: refresh
 
-#spring:
+spring:
 #  profiles:
-#    active: development
+#    active: dev
+  application:
+    name: user
+server:
+  port: 9000
+
+

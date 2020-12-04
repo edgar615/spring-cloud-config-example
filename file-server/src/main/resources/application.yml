@@ -1,4 +1,3 @@
-
 spring:
   profiles:
     active: native
@@ -7,6 +6,6 @@ spring:
       server:
         native:
           #多个文件,分隔
-          searchLocations: "classpath:/common-config"
+          searchLocations: classpath:/service-config,classpath:/service-config/user,classpath:/service-config/order
 server:
   port: 8080
